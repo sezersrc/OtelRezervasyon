@@ -41,6 +41,7 @@
             this.BtnRezOlustur = new System.Windows.Forms.ToolStripMenuItem();
             this.BtnRezListele = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.OdaListview = new System.Windows.Forms.ListView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.BtnOdaBosalt = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,6 @@
             this.LBLSecilen = new System.Windows.Forms.Label();
             this.LBLDoluOda = new System.Windows.Forms.Label();
             this.LBLBosOda = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -58,14 +58,14 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oDAİŞLEMLERİToolStripMenuItem,
             this.mÜŞTERİİŞLEMLERİToolStripMenuItem,
             this.rEZERVASYONİŞLEMLERİToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1644, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1644, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,20 +75,20 @@
             this.BtnOdaOlustur,
             this.BtnOdaListe});
             this.oDAİŞLEMLERİToolStripMenuItem.Name = "oDAİŞLEMLERİToolStripMenuItem";
-            this.oDAİŞLEMLERİToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.oDAİŞLEMLERİToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.oDAİŞLEMLERİToolStripMenuItem.Text = "ODA İŞLEMLERİ";
             // 
             // BtnOdaOlustur
             // 
             this.BtnOdaOlustur.Name = "BtnOdaOlustur";
-            this.BtnOdaOlustur.Size = new System.Drawing.Size(152, 22);
+            this.BtnOdaOlustur.Size = new System.Drawing.Size(191, 26);
             this.BtnOdaOlustur.Text = "ODA OLUŞTUR";
             this.BtnOdaOlustur.Click += new System.EventHandler(this.BtnOdaOlustur_Click);
             // 
             // BtnOdaListe
             // 
             this.BtnOdaListe.Name = "BtnOdaListe";
-            this.BtnOdaListe.Size = new System.Drawing.Size(152, 22);
+            this.BtnOdaListe.Size = new System.Drawing.Size(191, 26);
             this.BtnOdaListe.Text = "ODA LİSTELE";
             // 
             // mÜŞTERİİŞLEMLERİToolStripMenuItem
@@ -97,21 +97,22 @@
             this.BtnMusteriEkle,
             this.BtnMusteriListe});
             this.mÜŞTERİİŞLEMLERİToolStripMenuItem.Name = "mÜŞTERİİŞLEMLERİToolStripMenuItem";
-            this.mÜŞTERİİŞLEMLERİToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.mÜŞTERİİŞLEMLERİToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
             this.mÜŞTERİİŞLEMLERİToolStripMenuItem.Text = "MÜŞTERİ İŞLEMLERİ";
             // 
             // BtnMusteriEkle
             // 
             this.BtnMusteriEkle.Name = "BtnMusteriEkle";
-            this.BtnMusteriEkle.Size = new System.Drawing.Size(163, 22);
+            this.BtnMusteriEkle.Size = new System.Drawing.Size(224, 26);
             this.BtnMusteriEkle.Text = "MÜŞTERİ EKLE";
             this.BtnMusteriEkle.Click += new System.EventHandler(this.BtnMusteriEkle_Click);
             // 
             // BtnMusteriListe
             // 
             this.BtnMusteriListe.Name = "BtnMusteriListe";
-            this.BtnMusteriListe.Size = new System.Drawing.Size(163, 22);
+            this.BtnMusteriListe.Size = new System.Drawing.Size(224, 26);
             this.BtnMusteriListe.Text = "MÜŞTERİ LİSTELE";
+            this.BtnMusteriListe.Click += new System.EventHandler(this.BtnMusteriListe_Click);
             // 
             // rEZERVASYONİŞLEMLERİToolStripMenuItem
             // 
@@ -119,19 +120,19 @@
             this.BtnRezOlustur,
             this.BtnRezListele});
             this.rEZERVASYONİŞLEMLERİToolStripMenuItem.Name = "rEZERVASYONİŞLEMLERİToolStripMenuItem";
-            this.rEZERVASYONİŞLEMLERİToolStripMenuItem.Size = new System.Drawing.Size(154, 20);
+            this.rEZERVASYONİŞLEMLERİToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
             this.rEZERVASYONİŞLEMLERİToolStripMenuItem.Text = "REZERVASYON İŞLEMLERİ";
             // 
             // BtnRezOlustur
             // 
             this.BtnRezOlustur.Name = "BtnRezOlustur";
-            this.BtnRezOlustur.Size = new System.Drawing.Size(205, 22);
+            this.BtnRezOlustur.Size = new System.Drawing.Size(257, 26);
             this.BtnRezOlustur.Text = "REZERVASYON OLUŞTUR";
             // 
             // BtnRezListele
             // 
             this.BtnRezListele.Name = "BtnRezListele";
-            this.BtnRezListele.Size = new System.Drawing.Size(205, 22);
+            this.BtnRezListele.Size = new System.Drawing.Size(257, 26);
             this.BtnRezListele.Text = "REZERVASYON LİSTELE";
             // 
             // groupBox1
@@ -147,6 +148,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ODA LİSTESİ";
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(7, 751);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(10);
+            this.label1.Size = new System.Drawing.Size(1595, 40);
+            this.label1.TabIndex = 1;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OdaListview
             // 
             this.OdaListview.ContextMenuStrip = this.contextMenuStrip1;
@@ -158,35 +170,37 @@
             this.OdaListview.Size = new System.Drawing.Size(1593, 715);
             this.OdaListview.TabIndex = 0;
             this.OdaListview.UseCompatibleStateImageBehavior = false;
+            this.OdaListview.SelectedIndexChanged += new System.EventHandler(this.OdaListview_SelectedIndexChanged);
             this.OdaListview.DoubleClick += new System.EventHandler(this.OdaListview_DoubleClick);
             this.OdaListview.MouseClick += new System.Windows.Forms.MouseEventHandler(this.OdaListview_MouseClick);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnOdaBosalt,
             this.BtnOdaRez,
             this.BtnOdaYenile});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(199, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(236, 76);
             // 
             // BtnOdaBosalt
             // 
             this.BtnOdaBosalt.Name = "BtnOdaBosalt";
-            this.BtnOdaBosalt.Size = new System.Drawing.Size(198, 22);
+            this.BtnOdaBosalt.Size = new System.Drawing.Size(235, 24);
             this.BtnOdaBosalt.Text = "Odayı Boşalt";
             // 
             // BtnOdaRez
             // 
             this.BtnOdaRez.Name = "BtnOdaRez";
-            this.BtnOdaRez.Size = new System.Drawing.Size(198, 22);
+            this.BtnOdaRez.Size = new System.Drawing.Size(235, 24);
             this.BtnOdaRez.Text = "Odaya Rezervasyon Yap";
             this.BtnOdaRez.Click += new System.EventHandler(this.BtnOdaRez_Click);
             // 
             // BtnOdaYenile
             // 
             this.BtnOdaYenile.Name = "BtnOdaYenile";
-            this.BtnOdaYenile.Size = new System.Drawing.Size(198, 22);
+            this.BtnOdaYenile.Size = new System.Drawing.Size(235, 24);
             this.BtnOdaYenile.Text = "Odaları Yenile";
             this.BtnOdaYenile.Click += new System.EventHandler(this.BtnOdaYenile_Click);
             // 
@@ -206,7 +220,7 @@
             this.LBLSecilen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBLSecilen.Name = "LBLSecilen";
             this.LBLSecilen.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.LBLSecilen.Size = new System.Drawing.Size(117, 22);
+            this.LBLSecilen.Size = new System.Drawing.Size(138, 26);
             this.LBLSecilen.TabIndex = 3;
             this.LBLSecilen.Text = "Oda Seçilmedi";
             // 
@@ -219,7 +233,7 @@
             this.LBLDoluOda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBLDoluOda.Name = "LBLDoluOda";
             this.LBLDoluOda.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.LBLDoluOda.Size = new System.Drawing.Size(20, 22);
+            this.LBLDoluOda.Size = new System.Drawing.Size(20, 26);
             this.LBLDoluOda.TabIndex = 4;
             // 
             // LBLBosOda
@@ -231,23 +245,12 @@
             this.LBLBosOda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBLBosOda.Name = "LBLBosOda";
             this.LBLBosOda.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.LBLBosOda.Size = new System.Drawing.Size(20, 22);
+            this.LBLBosOda.Size = new System.Drawing.Size(20, 26);
             this.LBLBosOda.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(7, 751);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(10);
-            this.label1.Size = new System.Drawing.Size(1595, 40);
-            this.label1.TabIndex = 1;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1644, 850);
             this.Controls.Add(this.LBLBosOda);

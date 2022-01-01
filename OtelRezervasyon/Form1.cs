@@ -107,6 +107,8 @@ namespace OtelRezervasyon
 
 
         string SecilenOda = "";
+
+      
         private void OdaListview_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -154,6 +156,18 @@ namespace OtelRezervasyon
                 label1.Text = "Rezervasyon Yapılabilir";
             }
 
+
+        }
+
+        private void BtnMusteriListe_Click(object sender, EventArgs e)
+        {
+            OtelRezDataEntities db = new OtelRezDataEntities();
+            var degerler db.TBLMusteri.ToList();
+            
+        }
+
+        private void OdaListview_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
